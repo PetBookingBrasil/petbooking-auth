@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This microservice is focused to provide authentication support for all the Pet Booking applications.
 
-Things you may want to cover:
+* Ruby version:
+- 2.6.4
 
-* Ruby version
+* System dependencies:
+- Rails 6.0.0
+- Rspec 3.8.0
 
-* System dependencies
 
-* Configuration
+* Installation
+```
+bundle install
+```
 
 * Database creation
+```
+rake db:setup
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

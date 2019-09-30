@@ -29,8 +29,11 @@ RSpec.describe SessionController, type: :controller do
 
   describe '#create_by_facebook' do
     context 'when is valid to create a session' do
+
       before do
         post :create, user: { email: user.email }
+        #Change to facebook api loggin method name
+        Facebook::API.any_instance.stub(:call) { true }
       end
 
       it { expect(response.code).to eql(:200) }
@@ -40,6 +43,8 @@ RSpec.describe SessionController, type: :controller do
     context 'when is invalid to create a session' do
       before do
         post :create, user: { email: user.email }
+        #Change to facebook api loggin method name
+        Facebook::API.any_instance.stub(:call) { false }
       end
 
       it { expect(response.code).to eql(:404) }

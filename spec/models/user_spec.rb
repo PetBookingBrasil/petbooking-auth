@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe User, type: :model do
 
@@ -52,7 +52,8 @@ describe User, type: :model do
       it { is_expected.to validate_presence_of(:landline) }
     end
 
-    context 'when there phone value' do
+    context 'when there is a phone value' do
+      before { allow_any_instance_of(User).to receive(:should_validate_landline?).and_return(false) }
       it { is_expected.not_to validate_presence_of(:landline) }
     end
   end

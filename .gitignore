@@ -64,3 +64,7 @@ config.codekit3
 yarn-debug.log*
 .yarn-integrity
 yarn.lock
+
+# Logs
+/log
+/log/

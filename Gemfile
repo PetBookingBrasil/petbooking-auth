@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.4'
 
+gem 'devise'
 gem 'rspec', '~> 3.8.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -29,8 +30,14 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
+
+group :test do
+  gem 'shoulda-matchers', require: false
+end
+
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'

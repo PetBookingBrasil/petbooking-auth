@@ -43,7 +43,10 @@
 #
 
 class User < ActiveRecord::Base
-  devise :database_authenticatable, :registerable, :confirmable, :recoverable, :trackable
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 
   attr_accessor :current_password, :first_name, :last_name
   attr_accessor :set_by_business, :must_require_phone, :must_require_cpf,
@@ -107,7 +110,6 @@ class User < ActiveRecord::Base
   #############################
 
   def should_validate_landline?
-    print (phone.blank? && phone_required?)
     phone.blank? && phone_required?
   end
 

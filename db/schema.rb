@@ -10,25 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_02_204951) do
+ActiveRecord::Schema.define(version: 2019_10_03_005924) do
 
   create_table "users", primary_key: "uuid", force: :cascade do |t|
     t.date "birthday"
-    t.datetime "current_sign_in_at"
-    t.integer "sign_in_count", default: 0, null: false
     t.integer "gender"
     t.string "avatar"
-    t.string "current_sign_in_ip"
     t.string "email", limit: 254
-    t.string "last_sign_in_ip"
     t.string "phone", limit: 11
     t.string "name", null: false
     t.string "nickname"
-    t.string "reset_password_token"
+    t.string "password"
     t.string "encrypted_password", default: ""
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.datetime "last_sign_in_at"
     t.integer "bitmask", default: 0, null: false
     t.string "http_user_agent", limit: 254
     t.boolean "avatar_processing", default: false, null: false
@@ -50,6 +43,16 @@ ActiveRecord::Schema.define(version: 2019_10_02_204951) do
     t.integer "application_source"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

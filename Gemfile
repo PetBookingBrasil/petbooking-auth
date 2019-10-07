@@ -6,6 +6,7 @@ ruby '2.6.4'
 gem 'devise'
 gem 'rspec', '~> 3.8.0'
 gem 'jsonapi-rails'
+gem 'cpf_cnpj', github: 'PetBookingBrasil/cpf_cnpj', branch: 'feature/improve-interoperability-with-rails-and-active-model-serializer'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'

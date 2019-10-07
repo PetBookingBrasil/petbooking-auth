@@ -1,4 +1,5 @@
 require 'faker'
+require 'cpf_cnpj'
 
 FactoryBot.define do
   factory :user do
@@ -11,7 +12,7 @@ FactoryBot.define do
     street_number             { Faker::Address.building_number }
     city                      { Faker::Address.city }
     state                     { User::ESTADOS.sample }
-    cpf                       { User::CPF.generate }
+    cpf                       { CPF.generate }
     last_sign_in_ip           { Faker::Internet.ip_v4_address }
     sequence(:name)           { |n| "User #{n}" }
     nickname                  { (name || '').split()[0] }
@@ -20,14 +21,10 @@ FactoryBot.define do
     remember_created_at       { Time.now.utc }
     reset_password_sent_at    { Time.now.utc }
     reset_password_token      { SecureRandom.urlsafe_base64 }
-    reset_password_sent_at_v2 { Time.now.utc }
-    reset_password_token_v2   { SecureRandom.urlsafe_base64 }
     neighborhood              { Faker::Address.state }
-    device_token              { '' }
-    device_arn                { 'arn:aws:sns:us-east-1:959198832153:endpoint/APNS_SANDBOX/PetBooking/d4aaccfb-88f6-3e4b-aa33-f2f77cfbf591' }
     bitmask                   { 7 } # accepts all notifications
     source                    { 'web' }
-    landline                  { Faker::PhoneNumber.cell_phone }
+    landline                  { Faker::Number.number(digits = 11) }
     validation_code           { nil }
 
     sequence(:email) { |n| Faker::Internet.email.gsub('@', "#{n}@") }

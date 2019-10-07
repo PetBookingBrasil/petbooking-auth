@@ -4,7 +4,7 @@ RSpec.describe UsersController, type: :controller do
   let(:current_user) { create(:user) }
 
   before do
-    signin(current_user)
+    sign_in(current_user)
   end
 
   describe '#registration_edit' do
@@ -12,12 +12,12 @@ RSpec.describe UsersController, type: :controller do
       get :registration_edit
     end
 
-    it { expect(assigns(:current_user)).to be_present } 
+    it { expect(assigns(:current_user)).to be_present }
   end
 
   describe '#change_password' do
     before do
-      get :change_password
+      get :senha
     end
 
     it { expect(assigns(:current_user)).to be_present }
@@ -30,11 +30,11 @@ RSpec.describe UsersController, type: :controller do
     end
 
     context 'when is valid to update' do
-      it { expect{ put :update, user: { name: 'spec-test'} }.to change{ current_user.reload.name }.from(old_name).to('spec-test') }
+      it { expect{ put :update, params: { user: { name: 'spec-test'} } }.to change{ current_user.reload.name }.from(old_name).to('spec-test') }
     end
 
     context 'when is invalid to update' do
-      it { expect{ put :update, user: { CPF: '0'} }.to_not change{ current_user.reload.cpf.number } }
+      it { expect{ put :update, params: { user: { CPF: '0'} } }.to_not change{ current_user.reload.cpf.number } }
     end
   end
 
@@ -45,12 +45,13 @@ RSpec.describe UsersController, type: :controller do
       end
 
       it {
-        expect{ xhr :put, :update_password,
-          user: {
-            current_password: '123123123',
-            password: 'newpasswordtest',
-            password_confirmation: 'newpasswordtest'
-          } }.to change{ current_user.reload.encrypted_password }
+        expect{ put :update_password, params: {
+            user: {
+              current_password: '123123123',
+              password: 'newpasswordtest',
+              password_confirmation: 'newpasswordtest'
+            }
+          }, xhr: true }.to change{ current_user.reload.encrypted_password }
         }
     end
 
@@ -61,12 +62,13 @@ RSpec.describe UsersController, type: :controller do
         end
 
         it {
-          expect{ xhr :put, :update_password,
-            user: {
-              current_password: '111111111',
-              password: 'newpasswordtest',
-              password_confirmation: 'newpasswordtest'
-            } }.to_not change{ current_user.reload.encrypted_password }
+          expect{ put :update_password, params: {
+              user: {
+                current_password: '111111111',
+                password: 'newpasswordtest',
+                password_confirmation: 'newpasswordtest'
+              }
+            }, xhr: true }.to_not change{ current_user.reload.encrypted_password }
           }
       end
 
@@ -76,12 +78,13 @@ RSpec.describe UsersController, type: :controller do
         end
 
         it {
-          expect{ xhr :put, :update_password,
-            user: {
-              current_password: '123123123',
-              password: '',
-              password_confirmation: ''
-            } }.to_not change{ current_user.reload.encrypted_password }
+          expect{ put :update_password, params: {
+              user: {
+                current_password: '123123123',
+                password: '',
+                password_confirmation: ''
+              }
+            }, xhr: true }.to_not change{ current_user.reload.encrypted_password }
           }
       end
 
@@ -91,12 +94,13 @@ RSpec.describe UsersController, type: :controller do
         end
 
         it {
-          expect{ xhr :put, :update_password,
-            user: {
-              current_password: '123123123',
-              password: 'newpasswordtest',
-              password_confirmation: 'newpasswordtes'
-            } }.to_not change{ current_user.reload.encrypted_password }
+          expect{ put :update_password, params: {
+              user: {
+                current_password: '123123123',
+                password: 'newpasswordtest',
+                password_confirmation: 'newpasswordtes'
+              }
+            }, xhr: true }.to_not change{ current_user.reload.encrypted_password }
           }
       end
     end

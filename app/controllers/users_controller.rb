@@ -13,61 +13,51 @@ class UsersController < ApplicationController
         if user_params[:validation_code] && existing_user.validate_code(user_params[:validation_code].to_i) && check_password
           existing_user.update(user_params)
           sign_in existing_user.reload
-          flash[:success] = 'Cadastro realizado com sucesso!'
-          render "success_sign_up", locals: { path: root_path }
+          render jsonapi: existing_user
         elsif existing_user.generate_code
           @user.errors.add(:email, 'Conflito de email') if existing_user.email.present?
-          render "validation_code_sign_up"
+          render jsonapi_errors: @user.errors
         else
           @user.errors.add(:email_existing, existing_user.email)
-          render "error_sign_up"
+          render jsonapi_errors: @user.errors
         end
 
       else
-        render "error_sign_up"
+        render jsonapi_errors: @user.errors
       end
     end
   end
 
   def registration_edit
-    @current_user = current_user
+    render jsonapi: current_user
   end
 
   def senha
-    @current_user = current_user
-    respond_to do |format|
-      format.html
-      format.js
-    end
+    render jsonapi: current_user
   end
 
   def update_password
     if current_user.update_with_password(permitted_params)
       sign_in(current_user, :bypass => true)
-      flash[:success] = "Cadastro atualizado!"
-      render json
-      render :senha
+      render jsonapi: current_user.reload
     else
-      flash[:error] = "Não foi possível atualizar seu cadastro."
-      render :senha
+      render jsonapi_errors: current_user.errors
     end
   end
 
   def update
     if current_user.update(permitted_params)
-      flash[:success] = "Cadastro atualizado!"
-      render :registration_edit
+      render jsonapi: current_user.reload
     else
-      flash[:error] = "Não foi possível atualizar seu cadastro."
-      render :registration_edit
+      render jsonapi_errors: current_user.errors
     end
   end
 
   def delete
     unless current_user.destroy
-      flash[:error] = "Erro ao tentar cancelar conta. Entre em contato com o suporte."
+      render jsonapi_errors: current_user.errors
     else
-      redirect_to root_url
+      render jsonapi: nil
     end
   end
 

@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/PetBookingBrasil/cpf_cnpj.git
+  revision: cbfa17d6695348900a40b72cabc2f39908935226
+  branch: feature/improve-interoperability-with-rails-and-active-model-serializer
+  specs:
+    cpf_cnpj (0.2.1)
+
+GIT
   remote: https://github.com/faker-ruby/faker.git
   revision: e7c898c05306409cedf5b795a622a326ec87e279
   branch: master
@@ -213,6 +220,7 @@ DEPENDENCIES
   bcrypt
   bootsnap (>= 1.4.2)
   byebug
+  cpf_cnpj!
   database_cleaner
   devise
   factory_bot_rails

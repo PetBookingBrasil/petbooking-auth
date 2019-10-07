@@ -5,6 +5,7 @@ ruby '2.6.4'
 
 gem 'devise'
 gem 'rspec', '~> 3.8.0'
+gem 'jsonapi-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
@@ -36,6 +37,10 @@ end
 
 group :test do
   gem 'shoulda-matchers', require: false
+  gem "factory_bot_rails"
+  gem 'bcrypt'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+  gem 'database_cleaner'
 end
 
 

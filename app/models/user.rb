@@ -43,6 +43,11 @@
 #
 
 class User < ActiveRecord::Base
+
+  include ValueObjectWrapper::Phone
+  include ValueObjectWrapper::Cpf
+  include ValueObjectWrapper::Zipcode
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -68,6 +73,18 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password, if: :password_required?
   validates_length_of :password, within: Devise.password_length, allow_blank: true
   validates :cpf, presence: true, if: :must_require_cpf
+
+  scope :check_existence_by_email_or_phone, -> (email, phone){
+     where("email = ? OR phone = ?", email, phone)
+   }
+
+  SOURCE = [:web, :ios, :android, :varejonline]
+  GENDERS = [:male, :female]
+  ESTADOS = %w[AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO]
+
+  enum gender: GENDERS
+  enum state: ESTADOS
+  enum source: SOURCE
 
   # Email
   #############
@@ -117,4 +134,23 @@ class User < ActiveRecord::Base
     landline.present?
   end
 
+  def generate_code
+    if self.encrypted_password.blank? && self.present? && (self.email.present? || self.phone.present?) && self.created_by_business.present?
+      self.update(validation_code: rand(1000..9999))
+      if self.email.present?
+        #NEEDING MANDRIL IMPLEMENT
+        #MandrillDispatcher.delay.validation_code(self)
+      else
+        #NEEGIND SMS IMPLEMENT
+        #Notification::SMSWorker.perform_async(:validation_code, id)
+      end
+      true
+    else
+      false
+    end
+  end
+
+  def validate_code(code)
+    self.validation_code == code
+  end
 end

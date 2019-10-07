@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
-RSpec.describe UserController, type: :controller do
+RSpec.describe UsersController, type: :controller do
   let(:current_user) { create(:user) }
 
   before do
@@ -12,7 +12,7 @@ RSpec.describe UserController, type: :controller do
       get :registration_edit
     end
 
-    it { expect(assigns(:current_user)).to be_present }
+    it { expect(assigns(:current_user)).to be_present } 
   end
 
   describe '#change_password' do

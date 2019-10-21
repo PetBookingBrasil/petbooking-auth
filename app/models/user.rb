@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  searchkick word_start: [:name, :cpf, :email, :phone]
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 

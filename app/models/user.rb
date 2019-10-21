@@ -12,6 +12,10 @@ class User < ApplicationRecord
   enum state: ESTADOS
   enum source: SOURCE
 
+  has_many :sessions
+
+  validates :name, :email, presence: true
+
   protected
 
   def password_required?

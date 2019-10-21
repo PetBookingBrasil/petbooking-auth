@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_20_224422) do
+ActiveRecord::Schema.define(version: 2019_10_21_110627) do
+
+  create_table "sessions", force: :cascade do |t|
+    t.string "token", null: false
+    t.integer "device", null: false
+    t.integer "application", null: false
+    t.date "expires_at"
+    t.integer "provider", null: false
+    t.string "provider_uuid", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["token"], name: "index_sessions_on_token", unique: true
+    t.index ["user_id"], name: "index_sessions_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name", default: "", null: false

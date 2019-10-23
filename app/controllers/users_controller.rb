@@ -31,8 +31,8 @@ class UsersController < ApplicationController
   private
 
   def user_attributes
-    params[:data][:attributes].permit(:email, :password, :name, :phone, :provider, :birthday, :gender, :avatar, :nickname, :cpf, :city
-                                      :state, :search_range, :zipcode, :street, :street_number, :neighborhood, :skype, :complement, :source
+    params[:data][:attributes].permit(:email, :password, :name, :phone, :provider, :birthday, :gender, :avatar, :nickname, :cpf, :city,
+                                      :state, :search_range, :zipcode, :street, :street_number, :neighborhood, :skype, :complement, :source,
                                       :validation_code, :created_by_business, :landline, :remember_created_at)
   end
 

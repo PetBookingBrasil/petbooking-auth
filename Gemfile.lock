@@ -224,8 +224,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   annotate
   better_errors
+=======
+  annotate (~> 3.0.2)
+>>>>>>> d88ba89d740e5c34b4233095180c1ebf740b85d2
   bootsnap (>= 1.4.2)
   byebug
   devise (~> 4.7.1)

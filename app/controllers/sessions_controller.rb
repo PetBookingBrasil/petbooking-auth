@@ -22,6 +22,6 @@ class SessionsController < ApplicationController
   private
 
   def permitted_params
-    params.require(:session).permit(:device, :application, :provider, :provider_uuid)
+    params[:data][:attributes].permit(:device, :application, :provider, :provider_uuid)
   end
 end

@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_10_23_155316) do
     t.string "token", null: false
     t.integer "device", null: false
     t.integer "application", null: false
-    t.date "expires_at"
+    t.datetime "expires_at"
     t.integer "provider", null: false
     t.string "provider_uuid", null: false
     t.datetime "created_at", precision: 6, null: false

@@ -12,8 +12,8 @@ class UsersController < ApplicationController
     ActiveRecord::Base.transaction do
       @user = User.new(user_attributes)
       @user.save!
-      # @session = @user.sessions.new(session_attributes)
-      # @session.save!
+      @session = @user.sessions.new(session_attributes)
+      @session.save!
     end
   rescue => e
     render :nothing, status: 422

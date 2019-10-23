@@ -17,7 +17,6 @@ group :development, :test do
   gem 'annotate', '~> 3.0.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop'
-  gem 'annotate'
   gem 'better_errors'
   gem 'pry-rails'
   gem 'rspec-rails'

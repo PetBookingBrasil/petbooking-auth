@@ -14,7 +14,7 @@ RSpec.describe FacebookController, type: :controller do
       user_id: user.id,
       device: 0,
       application: 0,
-      provider: 0,
+      provider: 'facebook',
       provider_uuid: 0,
     )
   }
@@ -28,7 +28,7 @@ RSpec.describe FacebookController, type: :controller do
              email: user.email,
              device: 0,
              application: 0,
-             provider: 0,
+             provider: 'facebook',
              provider_uuid: 0,
            }
         }
@@ -45,7 +45,7 @@ RSpec.describe FacebookController, type: :controller do
            session: {
              email: user.email,
              device: 0,
-             provider: 0,
+             provider: 'facebook',
              provider_uuid: 0,
            }
         }
@@ -59,7 +59,7 @@ RSpec.describe FacebookController, type: :controller do
              email: 'not_registered@email.com',
              application: 0,
              device: 0,
-             provider: 0,
+             provider: 'facebook',
              provider_uuid: 0,
            }
         }

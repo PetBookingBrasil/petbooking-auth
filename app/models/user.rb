@@ -12,6 +12,12 @@ class User < ApplicationRecord
   enum state: ESTADOS
   enum source: SOURCE
 
+  def search_data
+    attributes.merge(
+      "source" => self.source.to_i
+    )
+  end
+
   protected
 
   def password_required?

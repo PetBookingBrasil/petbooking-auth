@@ -25,6 +25,7 @@ class FacebookController < ApplicationController
         permitted_params.merge(user_id: @user.id, expires_at: Time.now + 1.years)
                         .except(:email)
       )
+
       if @session.save
         @session
       else

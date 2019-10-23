@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.4'
 
-gem 'rspec', '~> 3.8.0'
 gem 'devise', '~> 4.7.1'
 gem 'searchkick', '~> 4.1.0'
 gem 'rails', '~> 6.0.0'
@@ -19,6 +18,7 @@ group :development, :test do
   gem 'annotate'
   gem 'better_errors'
   gem 'pry-rails'
+  gem 'rspec-rails'
 end
 
 group :development do

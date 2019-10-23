@@ -16,6 +16,14 @@ class User < ApplicationRecord
 
   validates :name, :email, presence: true
 
+  def search_data
+    attributes.merge(
+      'source' => User.sources[source],
+      'state' => User.states[state],
+      'gender' => User.genders[gender],
+    )
+  end
+
   protected
 
   def password_required?

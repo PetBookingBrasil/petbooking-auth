@@ -1,4 +1,5 @@
 class FacebookController < ApplicationController
+  before_action :check_provider
   before_action :check_user_existence
   before_action :set_session
 
@@ -7,6 +8,13 @@ class FacebookController < ApplicationController
   end
 
   private
+
+  def check_provider
+    if permitted_params[:provider] != 'facebook'
+      render json: "Only 'facebook' provider allowed", status: :unprocessable_entity
+      return
+    end
+  end
 
   def check_user_existence
     if User.find_by(email: permitted_params[:email])

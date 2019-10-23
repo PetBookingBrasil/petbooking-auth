@@ -66,6 +66,20 @@ RSpec.describe FacebookController, type: :controller do
 
         expect(response.code).to eql("404")
       end
+
+      it 'returns a 422 if provider not facebook' do
+        post :auth, params: {
+           session: {
+             email: user.email,
+             application: 0,
+             device: 0,
+             provider: 'google',
+             provider_uuid: 0,
+           }
+        }
+
+        expect(response.code).to eql("422")
+      end
     end
 
   end

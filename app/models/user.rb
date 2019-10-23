@@ -54,7 +54,14 @@ class User < ApplicationRecord
 
   has_many :sessions
 
-  validates :name, :email, presence: true
+  validates :search_range, numericality: { greater_than_or_equal_to: 5 }, if: -> { search_range.present? }
+  validates :name, presence: true, length: { minimum: 2 }
+  validates :phone, presence: true, length: { in: (10..11) }, uniqueness: true, if: -> { phone.present? }
+  validates :birthday, allow_nil: true, inclusion: { in: (150.years.ago..Date.today) }
+  validates :landline, length: { in: (10..11) }, if: -> { landline.present? }
+  validates :email, presence: true, uniqueness: true
+  validates :cpf, uniqueness: true
+  validates_format_of :email, with: URI::MailTo::EMAIL_REGEXP
 
   def search_data
     attributes.merge(

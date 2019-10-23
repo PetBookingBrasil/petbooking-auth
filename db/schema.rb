@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_21_110627) do
+ActiveRecord::Schema.define(version: 2019_10_23_155316) do
 
   create_table "sessions", force: :cascade do |t|
     t.string "token", null: false
     t.integer "device", null: false
     t.integer "application", null: false
-    t.date "expires_at"
+    t.datetime "expires_at"
     t.integer "provider", null: false
     t.string "provider_uuid", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2019_10_21_110627) do
     t.datetime "last_sign_in_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "provider"
     t.index ["cpf"], name: "index_users_on_cpf", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["phone"], name: "index_users_on_phone", unique: true

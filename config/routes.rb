@@ -3,5 +3,9 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  resources :users, only: [:index, :show]
+  resources :users, only: [:index, :show] do
+    collection do
+      post :facebook_auth, to: 'facebook#auth'
+    end
+  end
 end

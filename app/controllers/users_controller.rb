@@ -20,12 +20,20 @@ class UsersController < ApplicationController
   end
 
   def update
+    ActiveRecord::Base.transaction do
+      @user = User.find(params[:id])
+      @user.update(user_attributes)
+    end
+  rescue => e
+    render :nothing, status: 422
   end
 
   private
 
   def user_attributes
-    params[:data][:attributes].permit(:email, :password, :name, :phone, :provider)
+    params[:data][:attributes].permit(:email, :password, :name, :phone, :provider, :birthday, :gender, :avatar, :nickname, :cpf, :city
+                                      :state, :search_range, :zipcode, :street, :street_number, :neighborhood, :skype, :complement, :source
+                                      :validation_code, :created_by_business, :landline, :remember_created_at)
   end
 
   def session_attributes

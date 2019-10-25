@@ -1,6 +1,8 @@
 *.rbc
 capybara-*.html
 .rspec
+.byebug_history
+.env
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*

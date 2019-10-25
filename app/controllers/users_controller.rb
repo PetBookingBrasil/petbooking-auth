@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       @session.save!
     end
   rescue => e
-    render :nothing, status: 422
+    render json: { errors: e.message.as_json }, status: 422
   end
 
   def update
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
       @user.update(user_attributes)
     end
   rescue => e
-    render :nothing, status: 422
+    render json: { errors: e.message.as_json }, status: 422
   end
 
   private

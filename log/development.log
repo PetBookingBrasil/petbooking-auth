@@ -413,3 +413,7 @@ Completed 204 No Content in 810ms (Searchkick: 356.9ms | ActiveRecord: 64.1ms | 
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "lu-lpr@hotmail.com"], ["encrypted_password", "$2a$11$eqV2zDfojLuBagBFt3NavuyVd5VFTJRRwsudCsTM7x/aPaus6od92"], ["LIMIT", 1]]
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "lu-lpr@hotmail.com"], ["encrypted_password", "$a$11$eqV2zDfojLuBagBFt3NavuyVd5VFTJRRwsudCsTM7x/aPaus6od92"], ["LIMIT", 1]]
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "lu-lpr@hotmail.com"], ["encrypted_password", "$a$11$eqV2zDfojLuBagBFt3NavuyVd5VFTJRRwsudCsTM7x/aPaus6od92"], ["LIMIT", 1]]
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'

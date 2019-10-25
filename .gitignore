@@ -1,3 +1,5 @@
+.DS_Store
+
 *.rbc
 capybara-*.html
 .rspec
@@ -14,6 +16,7 @@ rerun.txt
 pickle-email-*.html
 
 # Ignore all logfiles and tempfiles.
+*.log
 /log/*
 /tmp/*
 !/log/.keep
@@ -58,6 +61,7 @@ node_modules/
 /public/packs
 /public/packs-test
 /public/assets
+
 
 # Ignore yarn files
 /yarn-error.log

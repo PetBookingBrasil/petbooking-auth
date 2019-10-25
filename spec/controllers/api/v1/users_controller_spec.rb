@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe UserController, type: :controller do
+RSpec.describe Api::V1::UsersController, type: :controller do
   let(:current_user) { create(:user) }
 
   before do

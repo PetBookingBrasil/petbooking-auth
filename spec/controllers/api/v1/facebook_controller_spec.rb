@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe FacebookController, type: :controller do
+RSpec.describe Api::V1::FacebookController, type: :controller do
   let(:user) {
     User.create(
       name: 'User',

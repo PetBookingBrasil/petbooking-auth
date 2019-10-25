@@ -5,6 +5,6 @@ class ApiConstraints
   end
 
   def matches?(req)
-    @default || req.headers['Accept'].include?("application/vnd.petbooking.v#{@version}")
+    @default || req.headers['Accept'].include?("application/auth.petbooking.v#{@version}")
   end
 end

@@ -1,112 +1,131 @@
 require 'spec_helper'
 
 RSpec.describe Api::V1::UsersController, type: :controller do
-  let(:current_user) { create(:user) }
 
-  before do
-    signin(current_user)
-  end
+  @@user_attributes = {
+    source: "web",
+    device: "crhome xpto",
+    provider: "petbooking",
+    name: "Douglas Andre",
+    email: "douglas@petbooking.com.br",
+    password: "123123123",
+    birthday: "1989-10-27",
+    city: "Curitiba",
+    state: "PR",
+    cpf: "06397826988",
+    phone: "41987368933",
+    gender: "male",
+    nickname: "Doug",
+    search_range: 5,
+    zipcode: "80010100",
+    street: "Av. Cândido de Abreu",
+    street_number: "400",
+    neighborhood: "Centro Cívico",
+    skype: "dougmoura",
+    complement: "Ap 3002" }
 
-  describe '#registration_edit' do
-    before do
-      get :registration_edit
-    end
+  describe '#create' do
+    context 'when the user was created successfully' do
+      let(:response) { post(:create) }
+      it { expect(response).to have_http_status(:created) }
 
-    it { expect(assigns(:current_user)).to be_present }
-  end
-
-  describe '#change_password' do
-    before do
-      get :change_password
-    end
-
-    it { expect(assigns(:current_user)).to be_present }
-    it { expect(response.status).to eq 200 }
-  end
-
-  describe '#update' do
-    before do
-      old_name = current_user.name
-    end
-
-    context 'when is valid to update' do
-      it { expect{ put :update, user: { name: 'spec-test'} }.to change{ current_user.reload.name }.from(old_name).to('spec-test') }
-    end
-
-    context 'when is invalid to update' do
-      it { expect{ put :update, user: { CPF: '0'} }.to_not change{ current_user.reload.cpf.number } }
-    end
-  end
-
-  describe '#update_password' do
-    context 'when is valid to update' do
-      before do
-        current_user.update(password: '123123123')
+      @@user_attributes.each do |key, value|
+        it "returns the created user with #{key} and #{value}" do
+          expect(response.body[:user][key]).to eq(value)
+        end
       end
 
-      it {
-        expect{ xhr :put, :update_password,
-          user: {
-            current_password: '123123123',
-            password: 'newpasswordtest',
-            password_confirmation: 'newpasswordtest'
-          } }.to change{ current_user.reload.encrypted_password }
-        }
+      it 'returns a JWT token for the next user requests' do
+        expect(response).to eq(@@user_attributes)
+      end
     end
 
-    context 'when is invalid to update' do
-      context 'when current password is incorrect' do
-        before do
-          current_user.update(password: '123123123')
+    context 'when the user was not created successfully' do
+      subject { post :create }
+
+      context 'when there is a problem with the params' do
+        it { expect(response).to have_http_status(:unprocessable_entity) }
+
+        it 'returns a JSON with the error' do
+          expect(response).to eq(user_attributes)
+        end
+      end
+
+      context 'when ocurred a server error' do
+        it { expect(response).to have_http_status(:internal_server_error) }
+
+        it 'returns an internal server error on JSON' do
+          expect(response).to eq(user_attributes)
+        end
+      end
+    end
+  end
+
+
+  context 'signed user requests' do
+  #   let(:current_user) { create(:user) }
+
+  #   before do
+  #     signin(current_user)
+  #   end
+
+    describe '#update' do
+      let(:user_attributes) {  }
+      let(:response) { put :update }
+
+      context 'when valid' do
+        it { expect(response).to have_http_status(:success) }
+
+        it 'returns the updated user on JSON response' do
+          expect(response).to eq(user_attributes)
+        end
+      end
+
+      context 'when invalid' do
+        context 'when there is a problem with the params' do
+          it { expect(response).to have_http_status(:unprocessable_entity) }
+
+          it 'returns a JSON with the error' do
+            expect(response).to eq(user_attributes)
+          end
         end
 
-        it {
-          expect{ xhr :put, :update_password,
-            user: {
-              current_password: '111111111',
-              password: 'newpasswordtest',
-              password_confirmation: 'newpasswordtest'
-            } }.to_not change{ current_user.reload.encrypted_password }
-          }
-      end
+        context 'when ocurred a server error' do
+          it { expect(response).to have_http_status(:internal_server_error) }
 
-      context 'when new password is invalid' do
-        before do
-          current_user.update(password: '123123123')
+          it 'returns an internal server error on JSON' do
+            expect(response).to eq(user_attributes)
+          end
         end
-
-        it {
-          expect{ xhr :put, :update_password,
-            user: {
-              current_password: '123123123',
-              password: '',
-              password_confirmation: ''
-            } }.to_not change{ current_user.reload.encrypted_password }
-          }
-      end
-
-      context 'when password confirmation does not match' do
-        before do
-          current_user.update(password: '123123123')
-        end
-
-        it {
-          expect{ xhr :put, :update_password,
-            user: {
-              current_password: '123123123',
-              password: 'newpasswordtest',
-              password_confirmation: 'newpasswordtes'
-            } }.to_not change{ current_user.reload.encrypted_password }
-          }
       end
     end
-  end
 
-  describe '#delete' do
-    before do
-      delete :delete
+    describe '#show' do
+      context 'when valid' do
+        it { expect(response).to have_http_status(:success) }
+
+        it 'returns the complete user on JSON response' do
+          expect(response).to eq(user_attributes)
+        end
+      end
+
+      context 'when invalid' do
+        context 'when user does not exists' do
+          it { expect(response).to have_http_status(:not_found) }
+
+          it 'returns a JSON with the error' do
+            expect(response).to eq(user_attributes)
+          end
+        end
+
+        context 'when ocurred a server error' do
+          it { expect(response).to have_http_status(:internal_server_error) }
+
+          it 'returns an internal server error on JSON' do
+            expect(response).to eq(user_attributes)
+          end
+        end
+      end
     end
-
-    it { expect{ User.find(current_user.id) }.to raise_exception(ActiveRecord::RecordNotFound) }
   end
 end

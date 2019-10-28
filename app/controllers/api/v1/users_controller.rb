@@ -2,14 +2,6 @@ module Api
   module V1
     class UsersController < ApplicationController
 
-      def index
-        render json: User.search('*').results
-      end
-
-      def show
-        render json: User.search(params['q'], fields:[:name, :cpf, :phone, :email], match: :word_start).results
-      end
-
       def create
         ActiveRecord::Base.transaction do
           @user = User.new(user_attributes)
@@ -19,6 +11,10 @@ module Api
         end
       rescue => e
         render json: { errors: e.message.as_json }, status: 422
+      end
+
+      def show
+        render json: User.search(params['q'], fields:[:name, :cpf, :phone, :email], match: :word_start).results
       end
 
       def update

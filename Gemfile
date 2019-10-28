@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.4'
 
 gem 'rspec', '~> 3.8.0'
+gem 'devise', '~> 4.7.1'
+gem 'searchkick', '~> 4.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
@@ -29,6 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'annotate', '~> 3.0.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

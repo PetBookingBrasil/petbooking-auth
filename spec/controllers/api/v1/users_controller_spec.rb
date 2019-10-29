@@ -2,52 +2,47 @@ require 'spec_helper'
 
 RSpec.describe Api::V1::UsersController, type: :controller do
 
-  @@user_attributes = {
-    source: "web",
-    device: "crhome xpto",
-    provider: "petbooking",
-    name: "Douglas Andre",
-    email: "douglas@petbooking.com.br",
-    password: "123123123",
-    birthday: "1989-10-27",
-    city: "Curitiba",
-    state: "PR",
-    cpf: "06397826988",
-    phone: "41987368933",
-    gender: "male",
-    nickname: "Doug",
-    search_range: 5,
-    zipcode: "80010100",
-    street: "Av. Cândido de Abreu",
-    street_number: "400",
-    neighborhood: "Centro Cívico",
-    skype: "dougmoura",
-    complement: "Ap 3002" }
+  USER_FIELDS = %w(source device provider name email 
+    password birthday city state cpf phone gender nickname 
+    search_range zipcode street street_number neighborhood skype complement)
 
   describe '#create' do
     context 'when the user was created successfully' do
-      let(:response) { post(:create) }
+      let(:user) { build(:user) }
+      let(:response) do
+        post(:create, params: {
+                        data: {
+                          attributes: user.attributes.merge({
+                            password: '123123123',
+                            device: 'Chrome XPTO',
+                            application: 'petbooking'
+                          })
+                        }
+                      } )
+      end
+      
       it { expect(response).to have_http_status(:created) }
 
-      @@user_attributes.each do |key, value|
-        it "returns the created user with #{key} and #{value}" do
-          expect(response.body[:user][key]).to eq(value)
+      USER_FIELDS.each do |user_field|
+        it "returns the created user with the correct #{user_field}" do
+          expect(response.body['user'][user_field]).to eq(user.send(user_field))
         end
       end
 
-      it 'returns a JWT token for the next user requests' do
-        expect(response).to eq(@@user_attributes)
+      it 'returns a JWT token for the user', first: true do
+        byebug
+        expect(response.body['user']['token']).to_not be_nil
       end
     end
 
     context 'when the user was not created successfully' do
-      subject { post :create }
+      subject { post :create, user.attributes.except(:name) }
 
       context 'when there is a problem with the params' do
         it { expect(response).to have_http_status(:unprocessable_entity) }
 
         it 'returns a JSON with the error' do
-          expect(response).to eq(user_attributes)
+          expect(response.body['errors']['name']).to eq('Não pode ser vazio')
         end
       end
 

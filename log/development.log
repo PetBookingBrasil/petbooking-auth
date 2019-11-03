@@ -417,3 +417,550 @@ Completed 204 No Content in 810ms (Searchkick: 356.9ms | ActiveRecord: 64.1ms | 
   ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
   [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (34.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:16:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:16:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:16:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:16:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "cpf", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["search_range", 40], ["created_at", "2019-10-31 18:35:57.109217"], ["updated_at", "2019-10-31 18:35:57.109217"]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[33mUser Store (679.7ms)[0m  {"id":2}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "cpf", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["search_range", 40], ["created_at", "2019-10-31 18:41:59.196537"], ["updated_at", "2019-10-31 18:41:59.196537"]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "cpf", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["search_range", 40], ["created_at", "2019-10-31 18:42:53.732512"], ["updated_at", "2019-10-31 18:42:53.732512"]]
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ lib/tasks/users.rake:12:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "cpf", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["search_range", 40], ["created_at", "2019-10-31 18:45:50.002793"], ["updated_at", "2019-10-31 18:45:50.002793"]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (17.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (1451.6ms)[0m  {"id":1}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (43.3ms)[0m  {"id":2}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:13:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "cpf", "state", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["state", 0], ["search_range", 40], ["created_at", "2019-11-03 21:26:19.225011"], ["updated_at", "2019-11-03 21:26:19.225011"]]
+  ↳ lib/tasks/users.rake:13:in `block (3 levels) in <main>'
+  [1m[35m (50.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:13:in `block (3 levels) in <main>'
+  [1m[33mUser Store (171.1ms)[0m  {"id":1}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:13:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "city", "state", "search_range", "zipcode", "street", "street_number", "neighborhood", "created_by_business", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "LUANA DA SILVA"], ["email", "luanadasilva91@hotmail.com"], ["phone", "51991493455"], ["nickname", "LUANA"], ["city", ""], ["state", 22], ["search_range", 40], ["zipcode", ""], ["street", ""], ["street_number", ""], ["neighborhood", ""], ["created_by_business", 19526], ["created_at", "2019-11-03 21:26:22.399580"], ["updated_at", "2019-11-03 21:26:22.399580"]]
+  ↳ lib/tasks/users.rake:13:in `block (3 levels) in <main>'
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:13:in `block (3 levels) in <main>'
+  [1m[33mUser Store (50.0ms)[0m  {"id":2}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:14:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "cpf", "state", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["gender", 0], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["state", 0], ["search_range", 40], ["created_at", "2019-11-03 21:27:01.974247"], ["updated_at", "2019-11-03 21:27:01.974247"]]
+  ↳ lib/tasks/users.rake:14:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ lib/tasks/users.rake:14:in `block (3 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (19.3ms)[0m  {"id":1}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (18.9ms)[0m  {"id":2}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:11:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "cpf", "state", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["gender", 0], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["state", 0], ["search_range", 40], ["created_at", "2019-11-03 21:38:31.378768"], ["updated_at", "2019-11-03 21:38:31.378768"]]
+  ↳ lib/tasks/users.rake:11:in `block (3 levels) in <main>'
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:11:in `block (3 levels) in <main>'
+  [1m[33mUser Store (55.6ms)[0m  {"id":1}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "luanadasilva91@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "51991493455"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:11:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "city", "state", "search_range", "zipcode", "street", "street_number", "neighborhood", "created_by_business", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "LUANA DA SILVA"], ["email", "luanadasilva91@hotmail.com"], ["gender", 0], ["phone", "51991493455"], ["nickname", "LUANA"], ["city", ""], ["state", 22], ["search_range", 40], ["zipcode", ""], ["street", ""], ["street_number", ""], ["neighborhood", ""], ["created_by_business", 19526], ["created_at", "2019-11-03 21:38:31.449310"], ["updated_at", "2019-11-03 21:38:31.449310"]]
+  ↳ lib/tasks/users.rake:11:in `block (3 levels) in <main>'
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:11:in `block (3 levels) in <main>'
+  [1m[33mUser Store (19.4ms)[0m  {"id":2}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? AND "users"."id" != ? LIMIT ?[0m  [["phone", "51991493455"], ["id", 2], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "luanadasilva91@hotmail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" IS NULL AND "users"."id" != ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? AND "users"."id" != ? LIMIT ?[0m  [["phone", "4195978565"], ["id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? AND "users"."id" != ? LIMIT ?[0m  [["cpf", "21404640363"], ["id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "nickname", "cpf", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["search_range", 40], ["created_at", "2019-11-03 21:46:22.795746"], ["updated_at", "2019-11-03 21:46:22.795746"]]
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ (byebug):1:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."phone" = ? AND "users"."id" != ? LIMIT ?[0m  [["phone", "4195978565"], ["id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = ? AND "users"."id" != ? LIMIT ?[0m  [["cpf", "21404640363"], ["id", 1], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:9:in `block (3 levels) in <main>'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "luanadasilva91@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uyguyg@ujhbhuuyg.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "46151367308"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eeed@ed.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "19243085921"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4196105325"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "cpf", "state", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ede1"], ["email", "eeed@ed.com"], ["gender", 0], ["phone", "4196105325"], ["nickname", "ede1"], ["cpf", "19243085921"], ["state", 0], ["search_range", 40], ["created_at", "2019-11-03 21:48:12.294404"], ["updated_at", "2019-11-03 21:48:12.294404"]]
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[33mUser Store (84.3ms)[0m  {"id":3}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "leo@l212.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "22418508536"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4196105325"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "15123514821"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "11953561762"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (12.3ms)[0m  {"id":1}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (11.5ms)[0m  {"id":2}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (11.8ms)[0m  {"id":3}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "21404640363"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "cpf", "state", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beautyane Date"], ["email", "beautyane.date@hotmail.com"], ["gender", 0], ["phone", "4195978565"], ["nickname", "Beautyane"], ["cpf", "21404640363"], ["state", 0], ["search_range", 40], ["created_at", "2019-11-03 21:49:16.427254"], ["updated_at", "2019-11-03 21:49:16.427254"]]
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[33mUser Store (29.1ms)[0m  {"id":1}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "luanadasilva91@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "51991493455"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "city", "state", "search_range", "zipcode", "street", "street_number", "neighborhood", "created_by_business", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "LUANA DA SILVA"], ["email", "luanadasilva91@hotmail.com"], ["gender", 0], ["phone", "51991493455"], ["nickname", "LUANA"], ["city", ""], ["state", 22], ["search_range", 40], ["zipcode", ""], ["street", ""], ["street_number", ""], ["neighborhood", ""], ["created_by_business", 19526], ["created_at", "2019-11-03 21:49:16.475218"], ["updated_at", "2019-11-03 21:49:16.475218"]]
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[33mUser Store (17.2ms)[0m  {"id":2}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uyguyg@ujhbhuuyg.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "46151367308"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eeed@ed.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "19243085921"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4196105325"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "cpf", "state", "search_range", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ede1"], ["email", "eeed@ed.com"], ["gender", 0], ["phone", "4196105325"], ["nickname", "ede1"], ["cpf", "19243085921"], ["state", 0], ["search_range", 40], ["created_at", "2019-11-03 21:49:16.524243"], ["updated_at", "2019-11-03 21:49:16.524243"]]
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[33mUser Store (17.9ms)[0m  {"id":3}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "leo@l212.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "22418508536"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4196105325"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "15123514821"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "11953561762"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "beautyane.date@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "luanadasilva91@hotmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "uyguyg@ujhbhuuyg.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "46151367308"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4195978565"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eeed@ed.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "leo@l212.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "22418508536"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "4196105325"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."cpf" = ? LIMIT ?[0m  [["cpf", "15123514821"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."phone" = ? LIMIT ?[0m  [["phone", "11953561762"], ["LIMIT", 1]]
+  ↳ lib/tasks/users.rake:20:in `user_find_or_initialize_by'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "gender", "phone", "nickname", "cpf", "city", "state", "search_range", "zipcode", "street", "street_number", "neighborhood", "complement", "created_by_business", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "MARIA DULCE"], ["email", nil], ["gender", 1], ["phone", "11953561762"], ["nickname", "teste"], ["cpf", "15123514821"], ["city", ""], ["state", 0], ["search_range", 40], ["zipcode", ""], ["street", ""], ["street_number", ""], ["neighborhood", ""], ["complement", ""], ["created_by_business", 33], ["created_at", "2019-11-03 21:49:33.508237"], ["updated_at", "2019-11-03 21:49:33.508237"]]
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ lib/tasks/users.rake:10:in `block (3 levels) in <main>'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (62.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (22.2ms)[0m  {"id":1}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (18.3ms)[0m  {"id":2}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[33mUser Remove (14.7ms)[0m  {"id":3}
